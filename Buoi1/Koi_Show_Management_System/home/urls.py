@@ -9,5 +9,6 @@ urlpatterns = [
     path('account-edit', views.account_edit, name= "account-edit"),
     path('koi', views.koi, name= "koi"),
     path('koi-edit', views.koi_edit, name= "koi-edit"),
+    
 ]
 

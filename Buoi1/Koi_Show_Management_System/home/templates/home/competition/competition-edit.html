@@ -4,12 +4,50 @@
     {% include '../../includes/nav-bar.html' %}
 {%endblock%}
 
-{%block left-menu%}
-    {% include '../../includes/left-menu.html' %}
-{%endblock%}
-
 {%block content%}
-    
+<div class="container py-5" style="width: 800px; height: 555px; margin-top: 100px; overflow: hidden; position: fixed; top:0; left:0; right: 0;">
+    <h2 class="fw-bold" style="color:#5b1c18;">All VietNam Koi Show</h2>
+    {% comment %} <p class="mb-4" style="font-size:16px; color:#333;">
+        Sử dụng biểu mẫu này để liên hệ với bất kỳ câu hỏi hoặc vấn đề nào. Cảm ơn bạn đã tham gia!
+    </p> {% endcomment %}
+
+    <form class="row g-3">
+        <div class="col-12">
+            <label class="form-label fw-bold">Name:</label>
+            <input type="text" class="form-control" placeholder="All Viet Nam Koi Show 2023" required>
+        </div>
+        
+        <div class="col-12">
+            <label class="form-label fw-bold">Start date:</label>
+            <input type="date" class="form-control" placeholder="2023-11-12">
+        </div>
+        
+        <div class="col-12">
+            <label class="form-label fw-bold">End date:</label>
+            <input type="date" class="form-control" placeholder="2023-04-06" required>
+        </div>
+        
+        <div class="col-md-6">
+            {% comment %} <button type="submit" class="btn text-white" style="background-color:#233A80; padding:10px 15px; font-weight:bold;">Save</button> {% endcomment %}
+            <a href="competitions"><button type="submit" class="btn text-white" style="background-color:#233A80; padding:10px 15px; font-weight:bold;">Save</button></a>
+        </div>
+
+        <div class="col-md-6">
+            <button type="submit" class="btn text-white"
+                style="background-color:#415CAE; padding:10px 12px; font-weight:bold; margin-left:30px">Save and add another</button>
+        </div>
+
+        <div class="col-md-6">
+            <button type="submit" class="btn text-white"
+                style="background-color:#415CAE; padding:10px 9px; font-weight:bold; margin-top:-87px; margin-left:120px">Save and continue editing</button>
+        </div>
+
+        <div class="col-md-6">
+            <button type="submit" class="btn text-white"
+                style="background-color:red; padding:10px 12px; font-weight:bold; margin-top:-87px; margin-left:266px">Delete</button>
+        </div>
+    </form>
+</div>
 {%endblock%}
 
 {%block footer%}

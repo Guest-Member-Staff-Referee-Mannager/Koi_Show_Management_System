@@ -1,0 +1,46 @@
+{% extends "master.html" %}
+
+{%block navbar%}
+    {% include '../../includes/nav-bar.html' %}
+{%endblock%}
+
+{%block content%}
+    <div class="user-form  mx-auto" style="width: 700px; height: 300px; margin-top: 200px; overflow: hidden; border:1px solid #ccc; position: fixed; top:0; left:0; right: 0;">
+        <div class="header-user" style="width:100%; height :120px">
+            <div class="user-top" style="height : 50%; background-color: #ccc; display: flex; justify-content: center;">
+                <div class="avatar" style="height:60px;width: 60px; border: 3px solid #000; border-radius: 50%;">
+                    <img src="https://i.pinimg.com/736x/be/09/81/be0981c4652679ab4db74f764d405132.jpg" alt="avatar"
+                        style="width: 100%; height: 100% ;object-fit: cover;  border-radius: 50%;">
+                </div>
+            </div>
+            <div class="user-bottom pt-3" style="text-align: center;">
+                <span style=" font-weight: 600; color:#000;padding-top: 5px; font-size: 25px;">Nguyen Van A</span>
+            </div>
+        </div>
+        <hr>
+        <div class="information grid gap-3 p-3" style="w-100%">
+            <div class="row" style="margin-right: 2px;">
+                <div class="col-4">
+                    <label for="name" class="fw-bold mb-2">Name:</label>
+                    <input type="text" id="name" name="name" value="Nguyen Van A" disabled>
+                    <button type="button" class="btn btn-primary mt-3">Save change</button>
+                </div>
+                <div class="col-4">
+                    <label for="email" class="fw-bold mb-2">Email:</label>
+                    <input type="email" id="email" name="email" value="nguyenvana@gmail.com" disabled>
+                    <button type="button" class="btn btn-warning mt-3">Change Password</button>
+                </div>
+                <div class="col-4">
+                    <label for="phone" class="fw-bold mb-2">Phone:</label>
+                    <input type="text" id="phone" name="phone" value="0987654321" disabled>
+                    <a href="account"><button type="button" class="btn btn-danger mt-3">Log out</button></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    {%endblock%}
+
+    {%block footer%}
+        {% include '../../includes/footer.html' %}
+    {%endblock%}
